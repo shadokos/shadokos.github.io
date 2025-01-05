@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "simple-wiki"
   spec.version       = "0.1.0"
   spec.authors       = ["riblanc"]
-  spec.email         = ["richard.blc25@gmail.com"]
+  spec.email         = ["riblanc@proton.me"]
 
   spec.summary       = "A simple wiki theme for Jekyll."
   spec.homepage      = "https://github.com/shadokos/simple-wiki-theme"

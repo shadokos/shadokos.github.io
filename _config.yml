@@ -2,3 +2,7 @@
 
 title: "SimpleWiki"
 description: "A simple wiki website."
+
+sass:
+  sass_dir: _sass
+  style: compressed

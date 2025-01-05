@@ -1,0 +1,9 @@
+{% assign title = page.title | default: site.title %}
+
+<head>
+  <title>{{ title }}</title>
+
+  {% include sections/head/meta.html %}
+  {% include sections/head/scripts.html %}
+  {% include sections/head/styles.html %}
+</head>

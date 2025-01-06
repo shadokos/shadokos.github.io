@@ -6,3 +6,6 @@ description: "A simple Jekyll wiki theme"
 sass:
   sass_dir: _sass
   style: compressed
+
+plugins:
+  - jekyll-target-blank

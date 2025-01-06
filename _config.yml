@@ -1,11 +1,11 @@
 # This file is used to store the configuration of the site.
 
-title: "SimpleWiki"
-description: "A simple Jekyll wiki theme"
+title: "Shadokos Wiki"
+description: "UNIX-like zig kernel documentation"
 
-url: "https://riblanc.github.io"
-baseurl: "/simple-wiki"
-repository: riblanc/simple-wiki
+url: "https://shadokos.github.io"
+baseurl:
+repository: shadokos/shadokos.github.io
 
 # Theme settings
 breadcrumb_separator: "»"
@@ -35,5 +35,5 @@ kramdown:
     default_lang: "text"
 
 google:
-  cx: 4661cb6c6e7f44632
+  # cx:
   site_verification: EqtKYUkYs-JttF6_8XsoKWZod8Qc2F4jvv3krniYebE

@@ -1,50 +1,64 @@
-# simple-wiki
+<p align=center><img src="https://github.com/user-attachments/assets/5c043d7d-890e-4c68-88af-ac1df5fb9ce5" width="200px"/></p>
+<h3 align=center>
+    Simple wiki theme for Jekyll
+  <br><br>
+</h3>
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+## Using this Template
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+1. Click the "Use this template" button at the top of this repository
+2. Choose a name for your repository
+3. Choose whether you want to make it public or private
+4. Click "Create repository from template"
 
-TODO: Delete this and the text above, and describe your gem
+## Setup and Running Locally
 
-## Installation
+1. Make sure you have Ruby installed on your system
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "simple-wiki"
+2. Install the required dependencies:
+```bash
+bundle install
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: simple-wiki
+3. Run the Jekyll site locally:
+```bash
+bundle exec jekyll serve
 ```
 
-And then execute:
+4. Open your browser and visit `http://localhost:4000/simple-wiki`
 
-    $ bundle
+## Configuration
 
-Or install it yourself as:
+The main configuration file is `_config.yml`. You can customize:
 
-    $ gem install simple-wiki
+- `title`: Your wiki name
+- `description`: A brief description of your wiki
+- `url`: Your domain URL
+- `baseurl`: The base URL path where your wiki will be served (e.g., "/simple-wiki")
 
-## Usage
+```
+Note: the baseurl is simple-wiki by default as the demo instance is deployed with github pages as a project page.
+Thus, the baseurl ('/simple-wiki' here) must match my repository name.
+If you wanna deploy this template as a user page, don't forget to remove baseurl from _config.yml.
+```
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+## Adding Content
+
+Place your markdown files in the `wiki/` directory. Files will be automatically converted to HTML pages.
+
+## Features
+
+- Clean, simple interface
+- Breadcrumb navigation
+- Automatic sitemap generation
+- External links open in new tabs
+- Google Custom Search integration
+- Markdown support with syntax highlighting
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/simple-wiki. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `simple-wiki.gemspec` accordingly.
+Bug reports and pull requests are welcome on GitHub at https://github.com/riblanc/simple-wiki. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](LICENSE).

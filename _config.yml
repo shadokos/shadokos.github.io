@@ -26,6 +26,12 @@ collections:
     directory: ./wiki/_dummy
     permalink: /wiki/:path/
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: "text"
+
 google:
   cx: 4661cb6c6e7f44632
   site_verification: EqtKYUkYs-JttF6_8XsoKWZod8Qc2F4jvv3krniYebE

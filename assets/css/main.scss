@@ -4,6 +4,13 @@
 ---
 
 @import "font";
+@import url(github-dark.css);
+
+div.highlight {
+    padding: 1rem;
+    border-radius: .25rem;
+    margin: 1rem 0;
+}
 
 hr {
   margin: 20px 0;

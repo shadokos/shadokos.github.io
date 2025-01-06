@@ -1,9 +1,12 @@
 <body>
   {% include sections/body/header.html %}
 
+
   <main class="container content">
+    {% include sections/body/breadcrumb.html %}
     {{ content }}
   </main>
 
   {% include sections/body/footer.html %}
+
 </body>

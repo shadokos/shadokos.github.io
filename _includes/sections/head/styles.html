@@ -1,1 +1,10 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<style type="text/css">
+  :root {
+    --bs-breadcrumb-divider: '{{ site.breadcrumb_divider | default: "/" }}';
+  }
+
+  .breadcrumb-item {
+    font-size: {{ site.breadcrumb_font_size | default: 1rem }};
+  }
+</style>

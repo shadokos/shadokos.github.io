@@ -3,6 +3,10 @@
 title: "SimpleWiki"
 description: "A simple Jekyll wiki theme"
 
+# Theme settings
+breadcrumb_separator: ">"
+breadcrumb_font_size: 1.25rem
+
 sass:
   sass_dir: _sass
   style: compressed

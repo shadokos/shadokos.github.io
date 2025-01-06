@@ -1,0 +1,17 @@
+{% assign url = "Home" | append: page.url | remove: '.html' | remove:'/index' %}
+{% assign displayed_crumbs = url | split: '/' %}
+{% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"/>
+    {% for crumb in displayed_crumbs %}
+      {% if forloop.last %}
+	<li class="breadcrumb-item active" aria-current="page">{{ crumb | replace:'-',' ' | remove:'.html' }}</li>
+      {% else %}
+	<li class="breadcrumb-item"><a href="{% assign crumb_limit = forloop.index %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
+

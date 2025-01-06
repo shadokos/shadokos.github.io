@@ -13,3 +13,11 @@ sass:
 
 plugins:
   - jekyll-target-blank
+
+collections_dir: ./wiki
+
+collections:
+  dummy:
+    output: true
+    directory: ./wiki/_dummy
+    permalink: /wiki/:path/

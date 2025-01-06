@@ -3,7 +3,6 @@ layout: default
 title: wiki
 ---
 
-## Articles
-- [Simple article](/wiki/simple-article)
-
+## Dummy Articles
+{% include tools/by_tag collection=site.dummy tag="dummy" %}
 

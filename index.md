@@ -4,7 +4,7 @@ layout: default
 
 ## Welcome to the index page
 
-You can find all the articles in the [wiki page](/wiki).
+You can find all the articles in the [wiki page]({{site.baseurl}}/wiki).
 
 ## About
 This website is powered by [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/) using the [SimpleWiki](https://github.com/shadokos/simple-wiki) theme.

@@ -13,6 +13,10 @@ a {
   color: #d1922b;
 }
 
+a:hover {
+  color: #8d2f00;
+}
+
 @media (max-width: 768px) {
   .container {
     padding-left: 0;

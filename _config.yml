@@ -3,6 +3,9 @@
 title: "SimpleWiki"
 description: "A simple Jekyll wiki theme"
 
+url: "https://shadokos.github.io"
+baseurl: "/simple-wiki"
+
 # Theme settings
 breadcrumb_separator: ">"
 breadcrumb_font_size: 1.25rem

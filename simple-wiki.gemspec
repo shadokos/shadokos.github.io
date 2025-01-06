@@ -7,10 +7,18 @@ Gem::Specification.new do |spec|
   spec.email         = ["riblanc@proton.me"]
 
   spec.summary       = "A simple wiki theme for Jekyll."
-  spec.homepage      = "https://github.com/shadokos/simple-wiki-theme"
+  spec.homepage      = "https://github.com/riblanc/simple-wiki"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files = Dir["assets/**/*", 
+                   "_layouts/**/*", 
+                   "_includes/**/*", 
+                   "_sass/**/*", 
+                   "LICENSE", 
+                   "README.md", 
+                   "_config.yml",
+                   "wiki/**/*",
+                   "*.gemspec"]
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
 end

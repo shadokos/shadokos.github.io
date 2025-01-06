@@ -6,6 +6,10 @@
 @import "font";
 @import url(github-dark.css);
 
+:root {
+  color-scheme: light;
+}
+
 div.highlight {
     padding: 1rem;
     border-radius: .25rem;

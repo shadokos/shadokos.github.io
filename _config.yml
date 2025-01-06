@@ -7,7 +7,7 @@ url: "https://riblanc.github.io"
 baseurl: "/simple-wiki"
 
 # Theme settings
-breadcrumb_separator: ">"
+breadcrumb_separator: "»"
 breadcrumb_font_size: 1.25rem
 
 sass:

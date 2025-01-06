@@ -1,4 +1,8 @@
-{% assign title = page.title | default: site.title %}
+{% if page.title %}
+  {% assign title = page.title | append: ' - ' | append: site.title %}
+{% else %}
+  {% assign title = site.title %}
+{% endif %}
 
 <head>
   <title>{{ title }}</title>

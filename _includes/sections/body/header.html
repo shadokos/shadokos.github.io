@@ -2,18 +2,18 @@
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="{{site.baseurl}}/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-	<img src="{{site.baseurl}}/assets/img/svg/simple_wiki_medium.svg" alt="logo" width="128px">
+        <img src="{{site.baseurl}}/assets/img/svg/simple_wiki_medium.svg" alt="logo" width="128px">
       </a>
 
       <h2 class="col-12 col-lg-auto me-lg-auto mb-2 mb-lg-0 text-center">
-	<small>
+        <small>
           {{ site.description | default: "Description" }}
-	</small>
+        </small>
       </h2>
-
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-	<input type="search" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search-addon">
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="{{site.baseurl}}/search/" method="get">
+        <input type="search" class="form-control" name="q" placeholder="Search..." aria-label="Search">
       </form>
+    </div>
+    <hr>
   </div>
-  <hr>
 </header>

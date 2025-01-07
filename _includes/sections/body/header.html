@@ -1,4 +1,4 @@
-<header class="p-3 pb-0">
+<header class="pb-0 py-2">
   <div class="container">
     <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="{{site.baseurl}}/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
@@ -10,10 +10,47 @@
           {{ site.description | default: "Description" }}
         </small>
       </h2>
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="{{site.baseurl}}/search/" method="get">
+      <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-3" action="{{site.baseurl}}/search/" method="get">
         <input type="search" class="form-control" name="q" placeholder="Search..." aria-label="Search">
       </form>
     </div>
-    <hr>
+
+<ul
+  class="nav nav-tabs mb-3 justify-content-between d-flex"
+  id="pageTab"
+  role="tablist"
+>
+  <!-- Breadcrumb à gauche -->
+  {% include sections/body/breadcrumb.html %}
+
+  <!-- Les éléments de droite (Read et Source Code) -->
+  <li class="d-flex nav-item ms-auto mt-2" role="presentation">
+    <button
+      class="nav-link active"
+      id="read-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#read"
+      type="button"
+      role="tab"
+      aria-controls="read"
+      aria-selected="true"
+    >
+      Read
+    </button>
+    <button
+      class="nav-link"
+      id="source-code-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#source-code"
+      type="button"
+      role="tab"
+      aria-controls="source-code"
+      aria-selected="false"
+    >
+      Source code
+    </button>
+  </li>
+</ul>
+
   </div>
 </header>

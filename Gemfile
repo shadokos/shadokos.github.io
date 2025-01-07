@@ -9,3 +9,5 @@ gem "webrick", "~> 1.7"
 gem 'jekyll-target-blank'
 
 gem 'jekyll-sitemap'
+
+gem "jekyll-github-metadata"

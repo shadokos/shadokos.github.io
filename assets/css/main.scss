@@ -10,10 +10,13 @@
   color-scheme: light;
 }
 
-div.highlight {
+.highlight {
+  border-radius: .25rem;
+  margin: 1rem 0;
+}
+
+.highlight pre {
     padding: 1rem;
-    border-radius: .25rem;
-    margin: 1rem 0;
 }
 
 hr {
@@ -28,3 +31,12 @@ a:hover {
   color: #8d2f00;
 }
 
+.file-header {
+    background-color: #2a3037;
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 0.5rem 1rem;
+}
+
+.file-header a {
+    color: #fff;
+}

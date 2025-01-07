@@ -3,8 +3,8 @@
 {% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
 {% assign separator = site.breadcrumb_separator | default: '/' %}
 
-<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '{{ separator }}';">
-  <ol class="breadcrumb">
+<nav aria-label="breadcrumb" class="align-content-center" style="--bs-breadcrumb-divider: '{{ separator }}';">
+  <ol class="breadcrumb mb-0 mt-2">
     <li class="breadcrumb-item"/>
     {% for crumb in displayed_crumbs %}
       {% if forloop.last %}

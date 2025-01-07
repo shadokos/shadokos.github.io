@@ -17,6 +17,7 @@ sass:
 plugins:
   - jekyll-target-blank
   - jekyll-sitemap
+  - jekyll-github-metadata
 
 collections_dir: ./wiki
 

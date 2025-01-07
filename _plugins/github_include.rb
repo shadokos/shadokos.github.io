@@ -55,9 +55,30 @@ module Jekyll
 
       <<-HTML
       <div>
+        <style>
+          .github-filepath {
+            background-color: #516767;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            text-decoration: unset;
+          }
+
+          .file-header {
+              background-color: #2a3037;
+              border-radius: 0.25rem 0.25rem 0 0;
+              padding: 0.5rem 1rem;
+          }
+          
+          .file-header a {
+              color: #fff;
+          }
+        </style>
         <div class="highlight">
           <div class="file-header">
-            #{filetype} &nbsp;///&nbsp; <a href="#{github_url}">#{filename}</a>
+            #{filetype} &nbsp;•&nbsp;
+            <a href="#{github_url}" class="github-filepath">
+              #{path} &nbsp;<i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
           <pre><code class="language-#{filetype}">#{highlighted_code}</code></pre>
         </div>

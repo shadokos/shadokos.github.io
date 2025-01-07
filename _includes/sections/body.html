@@ -7,6 +7,14 @@
   			{{ content }}
   		</div>
   		<div class="tab-pane fade" id="source-code" role="tabpanel" aria-labelledby="source-code-tab">
+				<div
+					role="button"
+					style="width:fit-content;padding:0 0.5rem;margin-bottom:0.5rem;font-size:1.5rem;"
+					onclick="document.getElementById('read-tab').click()"
+				>
+					<i class="bi bi-arrow-left"></i>
+				</div>
+
   			{% if site.github.repository_nwo %}
   			{% if page.collection %}
   			{% assign path = 'wiki/' | append: page.path %}

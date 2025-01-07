@@ -5,6 +5,7 @@ description: "A simple Jekyll wiki theme"
 
 url: "https://riblanc.github.io"
 baseurl: "/simple-wiki"
+repository: riblanc/simple-wiki
 
 # Theme settings
 breadcrumb_separator: "»"
